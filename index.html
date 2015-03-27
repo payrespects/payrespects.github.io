@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/noty/packaged/jquery.noty.packaged.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="mydiv"><h3>Press </h3> <h3 id="yellow">&nbsp;F&nbsp; </h3><h3> to Pay Respects</h3></div>
+<h1>Objective</h1><br />
+<h2>Pay your respects</h2>
+
+<script>
+$(document).keypress(function(e) {
+	
+    if(e.which == 102 || e.which == 70) {
+    	var n = noty({text: 'You paid respect.', timeout: 2});
+       
+    }
+});
+</script>
+</body>
+
+</html>
